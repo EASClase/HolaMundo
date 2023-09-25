@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hola Mundo</string>
+    <string name="my_name">Elias Aykour</string>
+    <string name="aceptar">ACEPTAR</string>
+</resources>
