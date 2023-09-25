@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical|center_horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/fondo"
+    android:onClick="onPulsado">
 
     <TextView
         android:id="@+id/tv_hola"
@@ -15,13 +17,34 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/ny_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onPulsado"/>
+
+
 
     <Button
         android:id="@+id/b_aceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/aceptar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onPulsado"
+        />
+
+    <Button
+        android:id="@+id/b_saludar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hola"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:onClick="onPulsado"
+        />
+
+    <Button
+        android:id="@+id/b_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salir"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:onClick="onPulsado"
         />
