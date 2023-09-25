@@ -8,8 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_vertical|center_horizontal"
     tools:context=".MainActivity"
-    android:id="@+id/fondo"
-    android:onClick="onPulsado">
+    android:id="@+id/fondo">
 
     <TextView
         android:id="@+id/tv_hola"
@@ -17,8 +16,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/ny_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:onClick="onPulsado"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
 
 
@@ -28,7 +26,6 @@
         android:layout_height="wrap_content"
         android:text="@string/aceptar"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:onClick="onPulsado"
         />
 
     <Button
@@ -37,7 +34,6 @@
         android:layout_height="wrap_content"
         android:text="@string/hola"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:onClick="onPulsado"
         />
 
     <Button
@@ -46,8 +42,11 @@
         android:layout_height="wrap_content"
         android:text="@string/salir"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:onClick="onPulsado"
-        />
+        android:onClick="onPulsado" />
+        <!-- Primera forma de usar un evento, usando el metodo onclick
+        directamente en el botón en este caso, en el main activity,
+        se instancia este botón y se referencia por id-->
+
 
 
 </LinearLayout>
